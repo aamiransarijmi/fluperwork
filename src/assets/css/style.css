@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif!important;
+    line-height: 28px;
+    color: #4c4c4c;
+}
+#addstripe p{
+    font-size: 24px!important;
+    margin-top: 15px;
+    color: #696969;
+}
+#addstripe p >strong{
+    color: #f63755;
+}
+#top-fixednav{
+    background: #fff;
+    box-shadow: 0 33px 50px rgba(245,59,85,.28);
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+.navbar-brand {
+    height: auto;
+    background: #fae3e3;
+    padding: 8px 15px 0;
+    position: relative;
+}
+.navbar-brand p{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #3b3b3b;
+    padding-top: 2px;
+}
+.navbar-brand:after {
+    content: '';
+    height: 0;
+    width: 0;
+    border: 0;
+    border-bottom: 98px solid transparent;
+    display: table-caption;
+    right: -35px;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    border-left: 35px solid #fae3e3;
+}
+
+
+.nav-contact ul{
+    list-style: none;
+    margin: 0;
+    float: right;
+}
+.nav-contact ul li{
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    padding: 0 15px;
+}
+.nav-contact ul li:after {
+    content: '';
+    width: 2px;
+    height: 28px;
+    position: absolute;
+    background: -webkit-linear-gradient(right,#f86a3a,#f5324f);
+    right: 0;
+    top: 1px;
+}
+.nav-contact ul li:last-child::after{
+    background: none;
+}
+.nav-contact ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: 0;
+    transition: all .5s;
+    text-decoration: none;
+}
+a{
+    color: #696969;
+    text-decoration: none;
+}
+.nav-contact ul li a:hover {
+    color: #f63755;
+    font-weight: 600;
+}
+.nav-contact ul li a i.fa {
+    font-size: 28px;
+    vertical-align: sub;
+    margin-right: 5px;
+    color: #f63755;
+}
+.nav-contact ul li a i.fa.fa-phone{    
+    transform: rotate(100deg);
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+.main-nav{
+    padding-top: 10px;
+}
+.btn.btn-request{
+    background: #fff;
+    transition: all .3s;
+    color: #f63755;
+    margin-top: 0!important;
+    padding: 7px 15px;
+    font-size: 16px!important;
+    border-radius: 5px;
+    box-shadow: 0 10px 50px rgba(245,59,85,.6);
+    border: 2px solid #f44653;
+}
+.btn.btn-request:hover{
+    background: linear-gradient(135deg,#ef704e 5%,#f54256 50%,#f63755 100%);
+    color: #fff;
+    box-shadow: 0 10px 50px rgba(245,59,85,.6);
+}
+.top-nav {
+    float: right;
+}
+.top-nav a{
+    position: relative;
+}
+.top-nav a.nav-link{
+    font-size: 19px!important;
+    padding: 6px 25px 10px!important;
+    cursor: pointer;
+}
+.top-nav a.active{
+    background: -webkit-linear-gradient(right,#f86a3a,#f5324f);
+    padding: 7px 25px !important;
+    font-size: 19px!important;
+    border-radius: 8px;
+    color: white !important;
+}
+.top-nav a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to top,#ef704e 0,#f63755 98%,#ef704e 100%);
+    transition: width .3s;
+    z-index: 9;
+}
+.top-nav a:hover{
+    color: #f63755 ;
+}
+.top-nav a:hover:before {
+    width: calc(100% + 1px);
+}
+.btn.btn-arrow{
+    background: -webkit-linear-gradient(right,#f86a3a,#f5324f);
+    padding: 8px 20px !important;
+    border-radius: 6px;
+    color: white !important;
+    border: 0;
+}
+
+#home-banner{
+    background-image: url(/assets/image/banner.png);
+    margin-top: 55px;
+    height: 700px;
+    background-size: cover;
+    padding: 50px;
+    background-repeat: no-repeat;
+}
+#home-banner h1{
+    font-size: 54px;
+    line-height: 64px;
+    padding-bottom: 10px;
+    font-weight: 500!important;
+    color: #222;
+}
+#home-banner h1 .larger-text{
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+}
+.theme-color {
+    background: -webkit-linear-gradient(right,#f86a3a,#f5324f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#home-banner p{
+    font-size: 24px;
+    color: #222222;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+.benefits ul{
+    list-style: none;
+    display: inline-block;
+}
+.benefits ul li {
+    width: 45%;
+    display: inline-block;
+    margin: 10px 10px;
+}
+.benefit-option{
+ position: relative;
+ padding: 30px;
+ border: 2px solid black;
+ margin: 10px 0px 25px;
+}
+.benefit-option h4 {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+    background: white;
+    padding: 0 5px;
+    font-size: 28px;
+    color: #ff6c58;
+    font-weight: 700;
+}
+.benefit-option p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+#section2{
+    padding: 60px 0;
+    position: relative;
+}
+#section2 .mainheading h3{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: left;
+}
+#section2 .mainheading h3:nth-child(2){
+    padding-left: 120px;
+}
+#section2 .mainheading p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 38px;
+}
+.moving-arrow{
+    position: absolute;
+    bottom: -50px;
+}
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes tada{
+    0% {
+        transform: scale(1);
+    }
+    10%, 20% {
+        transform: scale(.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+@media only screen and (max-width: 768px) {
+    #home-banner h1 .larger-text {
+        font-size: 30px;
+    }
+    #home-banner h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .top-nav {
+        float: left;
+    }
+    .benefits ul li {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .benefits ul {
+        padding: 0;
+    }
+    #section2 .mainheading h3 {
+        font-size: 30px;
+    }
+    #section2 .mainheading h3:nth-child(2) {
+        padding-left: 0
+    }
+    #section2 .mainheading p {
+        font-size: 20px;
+    }
+    #addstripe p {
+        font-size: 12px!important;
+    }
+}
